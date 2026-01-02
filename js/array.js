@@ -70,7 +70,7 @@ confirmBtn.addEventListener("click", () => {
         return;
     }
     if (arr[index] !== null) {
-        alert("Index ${index} is already filled.");
+        alert(`Index ${index} is already filled.`);
         return;
     }
     const targetCell = document.querySelectorAll(".array-cell.value")[index];
