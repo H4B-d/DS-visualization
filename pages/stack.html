@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stack Visualization</title>
+  <link rel="stylesheet" href="../css/stack.css">
+</head>
+<body>
+
+<header class="header">Stack Visualization</header>
+
+<main class="layout">
+  <section class="panel controls">
+    <h3>Controls</h3>
+    <label>Input</label>
+    <input id="inputValue" placeholder="Enter a value...">
+
+    <div class="btn-group">
+      <button id="pushBtn">Push</button>
+      <button id="popBtn">Pop</button>
+      <button id="topBtn">Top</button>
+    </div>
+    <div id="status"></div>
+  </section>
+
+  <section class="stack-area">
+    <div class="stack-wrapper">
+      <div class="stack-label">TOP</div>
+      <div class="stack-frame">
+        <div id="stack"></div>
+      </div>
+      <div class="stack-base">BOTTOM</div>
+    </div>
+  </section>
+
+  <section class="panel legend">
+    <h3>Legend</h3>
+    <div class="legend-item">
+      <span class="dot normal"></span> Normal items
+    </div>
+    <div class="legend-item">
+      <span class="dot top"></span> Top item
+    </div>
+    <div class="legend-item">
+      <span class="dot warning"></span> Pop item
+    </div>
+  </section>
+</main>
+
+<script src="../js/stack.js"></script>
+</body>
+</html>

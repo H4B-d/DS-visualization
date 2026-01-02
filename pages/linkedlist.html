@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Singly Linked List Visualization - Pro</title>
+  <link rel="stylesheet" href="../css/linkedlist.css">
+</head>
+<body>
+
+<header class="header">Singly Linked List Visualization</header>
+
+<main class="container">
+  <div class="controls-panel">
+    
+    <div class="control-group">
+      <h3>1. Head & Tail</h3>
+      <div class="input-row">
+        <input id="valueHT" type="number" placeholder="Enter a value">
+        <button onclick="insertHead()">Insert Head</button>
+        <button onclick="insertTail()">Insert Tail</button>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <h3>2. Insert Position</h3>
+      <div class="input-row">
+        <input id="valueBA" type="number" placeholder="Enter a value">
+        <input id="targetBA" type="number" placeholder="Target node">
+        <button onclick="insertBeforeNode()">Before</button>
+        <button onclick="insertAfterNode()">After</button>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <h3>3. Delete</h3>
+      <div class="input-row">
+        <input id="valueDel" type="number" placeholder="Enter a value">
+        <button class="btn-delete" onclick="deleteNode()">Delete Node</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="log-content"></div>
+  <div id="list"></div>
+</main>
+
+<script src="../js/linkedlist.js"></script>
+</body>
+</html>
+

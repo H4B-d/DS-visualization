@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Queue Visualization</title>
+  <link rel="stylesheet" href="../css/queue.css">
+</head>
+<body>
+
+<header class="header">Queue Visualization</header>
+
+<main class="layout">
+  <section class="panel controls">
+    <h3>Controls</h3>
+    <label for="inputValue">Input</label>
+    <input id="inputValue" placeholder="Enter here...">
+
+    <div class="btn-group">
+      <button id="enqueueBtn">Push</button>
+      <button id="dequeueBtn">Pop</button>
+      <button id="frontBtn">Front</button>
+      <button id="rearBtn">Rear</button>
+    </div>
+    <div id="status"></div>
+  </section>
+
+  <section class="queue-area">
+    <div class="queue-wrapper">
+      <div class="queue-track">
+        <span class="label front-label">EXIT (FRONT)</span>
+        <div id="queue"></div>
+        <span class="label rear-label">ENTRY (REAR)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel legend">
+    <h3>Legend</h3>
+    <div class="legend-item">
+      <span class="dot normal"></span>Normal items
+    </div>
+    <div class="legend-item">
+      <span class="dot front"></span>Front item
+    </div>
+    <div class="legend-item">
+      <span class="dot rear"></span>Rear item
+    </div>
+    <div class="legend-item">
+      <span class="dot warning"></span>Dequeue item
+    </div>
+  </section>
+</main>
+
+<script src="../js/queue.js"></script>
+</body>
+</html>

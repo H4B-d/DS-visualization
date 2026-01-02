@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BST Visualization</title>
+  <link rel="stylesheet" href="../css/tree.css">
+</head>
+<body>
+
+<header class="header">Binary Search Tree Visualization</header>
+
+<main class="container">
+  <section class="controls">
+    <input id="valueInput" type="number" placeholder="Enter value">
+    <button onclick="insert()">Insert</button>
+    <button onclick="deleteValue()">Delete</button>
+    <button onclick="bfsStepSearch()">BFS Search</button>
+    <button onclick="startInorder()">Inorder Traversal</button>
+    <button onclick="resetTree()" style="background: var(--red);">Reset Tree</button>
+  </section>
+
+  <div id="result"></div>
+  <div id="inorder-sequence"></div>
+  <div id="tree-container"></div>
+</main>
+
+<script src="../js/tree.js"></script>
+</body>
+</html>

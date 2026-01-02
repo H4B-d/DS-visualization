@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Array Visualization</title>
+    <link rel="stylesheet" href="../css/array.css" />
+</head>
+<body>
+
+<header class="header">Array Visualization</header>
+
+<main class="container">
+    <div class="controls">
+        <input type="number" id="arraySize" placeholder="Size: (1-10)" />
+        <button id="createArray">Create</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="array-wrapper" id="arrayWrapper"></div>
+
+    <div class="logs">
+        <p id="searchStatus" class="status-text"></p>
+        <p id="sortStatus" class="status-text"></p>
+    </div>
+
+    <fieldset id="controlPanel" class="hidden">
+        <h3>1. Insert value</h3>
+        <div id="arrayControls" class="array-controls">
+            <input type="number" id="indexInput" placeholder="Index"/>
+            <input type="number" id="valueInput" placeholder="Value"/>
+            <button id="confirmBtn">Confirm</button>
+        </div>
+
+        <h3>2. Search & Sort</h3>
+        <div class="action-row">
+            <div class="search-controls">
+                <input type="number" id="searchValue" placeholder="Enter your value"/>
+                <button id="binarySearchBtn">Search (Auto)</button>
+                <button id="binaryStepBtn">Search (Step)</button>
+            </div>
+            <div class="sort-controls">
+                <button id="bubbleAutoBtn">Sort (Auto)</button>
+                <button id="bubbleStepBtn">Sort (Step)</button>
+            </div>
+        </div>
+    </fieldset>
+</main>
+
+<script src="../js/array.js"></script>
+</body>
+</html>
